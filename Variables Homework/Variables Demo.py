@@ -1,6 +1,11 @@
-p = 10000
-r = 0.08
-n = 12
-t = 10
-a = p*(1+(r/n)**(n*t))
-print(a)
+p = (10000)
+n = (12)
+r = (0.08)
+years = input("Number of years?")
+division1 = (r/n)
+exp1 = (12 * years)
+brackets1 = (1 + division1)
+brackets1 = (int(brackets1 ** exp1))
+brackets1 = str(brackets1)
+
+print("Your final amount of earning compound interest: " + brackets1 )
