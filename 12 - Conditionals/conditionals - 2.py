@@ -11,20 +11,20 @@ You return home after 137 sleeps.
 Write a general version of the program which asks for:
     the starting day number, and
     the length of your stay, and
-    
+
 it will tell you the name of day of the week you will return on.
 '''
 
-dayNumber = 3
-sleepsNumber = 1
+dayNumber = 3 #Wed
+sleepsNumber = 3
 
 print("Weeks away: "+ str( sleepsNumber//7))  #Not necessary, but to help show the logic
 print("Days away: "+ str(sleepsNumber % 7))   #Not necessary, but to help show the logic
 
-dayNumber = dayNumber + sleepsNumber % 7
+dayNumber = (dayNumber + sleepsNumber) % 7
 
-# if dayNumber >= 7:                          #Why is this section necessary?
-#     dayNumber = dayNumber - 7
+#if dayNumber >= 7:                          #Why is this section necessary?
+#    dayNumber = dayNumber - 7
 
 print("You return from your vacation on ", end ="")   #What the?  What's this?  Why?  Any ideas?
 
@@ -43,4 +43,4 @@ elif dayNumber == 5:
 elif dayNumber == 6:
     print("Saturday")
 else: #This part is not required, but it shows simple error checking
-    print("Tuna Fish")
+    print("Error, the day doesn't exist")
